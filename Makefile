@@ -13,5 +13,11 @@ pass_fail:
 function_return:
 	go build -o bin/function_return chapter3/function_return.go
 
+exercise_negate:
+	go build -o bin/exercise_negate chapter3/exercise_negate.go
+
+exercise_negate_modified:
+	go build -o bin/exercise_negate_modified chapter3/exercise_negate_modified.go
+
 clean: 
-	rm -f floor helloworld pass_fail function_return
+	rm -f floor helloworld pass_fail function_return exercise_negate exercise_negate_modified
