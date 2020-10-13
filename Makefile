@@ -1,4 +1,4 @@
-all: floor helloworld pass_fail function_return exercise_negate exercise_negate_modified keyboard array_exercise scanner
+all: floor helloworld pass_fail function_return exercise_negate exercise_negate_modified keyboard array_exercise scanner slice_exercise
 .PHONY: all
 
 floor:
@@ -28,6 +28,9 @@ array_exercise:
 scanner:
 	go build -o bin/scanner src/chapter5/scanner.go
 	cp src/chapter5/data.txt bin/
+
+slice_exercise:
+	go build -o bin/slice_exercise src/chapter6/slice_exercise.go
 
 clean: 
 	rm -rf bin/*
