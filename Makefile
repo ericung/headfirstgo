@@ -1,4 +1,4 @@
-all: floor helloworld pass_fail function_return exercise_negate exercise_negate_modified keyboard array_exercise scanner slice_exercise magnets
+all: floor helloworld pass_fail function_return exercise_negate exercise_negate_modified keyboard array_exercise scanner slice_exercise magnets struct_exercise geo
 .PHONY: all
 
 floor:
@@ -34,6 +34,12 @@ slice_exercise:
 
 magnets:
 	go build -o bin/magnets src/chapter7/magnets.go
+
+struct_exercise:
+	go build -o bin/struct_exercise src/chapter8/struct_exercise.go
 	
+geo:
+	go build -o bin/geo src/chapter8/main.go
+
 clean: 
 	rm -rf bin/*
