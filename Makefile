@@ -53,5 +53,8 @@ coordinates_exercise:
 vehicle_exercise:
 	go build -o bin/vehicle_exercise src/chapter11/vehicle_exercise.go
 
+snack_exercise:
+	go build -o bin/snack_exercise src/chapter12/snack_exercise.go
+
 clean: 
 	rm -rf bin/*
