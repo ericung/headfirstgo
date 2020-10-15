@@ -1,4 +1,4 @@
-all: floor helloworld pass_fail function_return exercise_negate exercise_negate_modified keyboard array_exercise scanner slice_exercise magnets struct_exercise geo addSubtract_exercise sayHi coordinates_exercise vehicle_exercise
+all: floor helloworld pass_fail function_return exercise_negate exercise_negate_modified keyboard array_exercise scanner slice_exercise magnets struct_exercise geo addSubtract_exercise sayHi coordinates_exercise vehicle_exercise channel_exercise
 .PHONY: all
 
 floor:
@@ -55,6 +55,9 @@ vehicle_exercise:
 
 snack_exercise:
 	go build -o bin/snack_exercise src/chapter12/snack_exercise.go
+
+channel_exercise:
+	go build -o bin/channel_exercise src/chapter13/channel_exercise.go
 
 clean: 
 	rm -rf bin/*
