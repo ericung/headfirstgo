@@ -59,5 +59,8 @@ snack_exercise:
 channel_exercise:
 	go build -o bin/channel_exercise src/chapter13/channel_exercise.go
 
+hello_web:
+	go build -o bin/hello_web src/chapter15/hello.go
+
 clean: 
 	rm -rf bin/*
