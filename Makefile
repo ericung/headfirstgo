@@ -1,4 +1,4 @@
-all: floor helloworld pass_fail function_return exercise_negate exercise_negate_modified keyboard array_exercise scanner slice_exercise magnets struct_exercise geo addSubtract_exercise sayHi coordinates_exercise vehicle_exercise channel_exercise
+all: floor helloworld pass_fail function_return exercise_negate exercise_negate_modified keyboard array_exercise scanner slice_exercise magnets struct_exercise geo addSubtract_exercise sayHi coordinates_exercise vehicle_exercise channel_exercise guestbook
 .PHONY: all
 
 floor:
@@ -61,6 +61,12 @@ channel_exercise:
 
 hello_web:
 	go build -o bin/hello_web src/chapter15/hello.go
+
+guestbook:
+	go build -o bin/guestbook/guestbook src/chapter16/guestbook.go
+	cp src/chapter16/new.html bin/guestbook/
+	cp src/chapter16/view.html bin/guestbook/
+	cp src/chapter16/signatures.txt bin/guestbook/
 
 clean: 
 	rm -rf bin/*
